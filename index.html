@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="陈彬娴 · 清华大学生物学博士 · 结构生物学 · 人工智能抗菌肽挖掘">
+    <title>陈彬娴 | 结构生物学 · 抗菌肽AI设计</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f8fafc;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #0f172a;
+            line-height: 1.55;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        h1 {
+            font-size: 2.6rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            color: #0a0f1c;
+            margin-bottom: 0.25rem;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            font-weight: 500;
+            border-bottom: 2px solid #e2edf2;
+            padding-bottom: 0.4rem;
+            margin: 2rem 0 1.2rem 0;
+            color: #0f2b3d;
+        }
+
+        .subhead {
+            font-size: 1.1rem;
+            color: #2c5a7a;
+            margin-top: 0.2rem;
+            border-left: 4px solid #2c7da0;
+            padding-left: 1rem;
+            background: #f1f6fa;
+            border-radius: 0 12px 12px 0;
+        }
+
+        .header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+            gap: 1.5rem;
+        }
+
+        .title-section {
+            flex: 2;
+        }
+
+        .contact-info {
+            flex: 1;
+            background: #ffffff;
+            padding: 0.8rem 1.2rem;
+            border-radius: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+            border: 1px solid #e4edf2;
+            font-size: 0.9rem;
+        }
+
+        .contact-info p {
+            margin: 0.4rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            color: #1f3b4c;
+        }
+
+        .contact-info a {
+            color: #1e6f9f;
+            text-decoration: none;
+            border-bottom: 1px dotted #bcd0df;
+        }
+
+        .contact-info a:hover {
+            color: #0b4b6e;
+            border-bottom-color: #1e6f9f;
+        }
+
+        .bio-card {
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 1.6rem 2rem;
+            margin: 1.5rem 0 1rem 0;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02), 0 1px 2px rgba(0,0,0,0.04);
+            border: 1px solid #eaf0f5;
+        }
+
+        .bio-text {
+            font-size: 1rem;
+            color: #1e2f3c;
+            margin-bottom: 1rem;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .info-block {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 1.2rem 1.5rem;
+            border: 1px solid #eaf0f6;
+            margin-bottom: 1rem;
+        }
+
+        .degree {
+            margin-bottom: 0.9rem;
+        }
+
+        .degree strong {
+            font-weight: 600;
+            color: #0b3550;
+        }
+
+        .date {
+            font-size: 0.85rem;
+            color: #5c6f87;
+            margin-left: 0.5rem;
+        }
+
+        .pub-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .pub-list li {
+            margin-bottom: 1.25rem;
+            font-size: 0.92rem;
+            line-height: 1.5;
+            border-left: 2px solid #d9e6f2;
+            padding-left: 1rem;
+        }
+
+        .pub-title {
+            font-weight: 700;
+            color: #0f3b5c;
+        }
+
+        .pub-journal {
+            font-style: italic;
+            color: #2c6b2f;
+        }
+
+        .badge {
+            background: #e9f2f9;
+            color: #1f6392;
+            padding: 0.2rem 0.7rem;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            display: inline-block;
+            margin-left: 0.5rem;
+        }
+
+        hr {
+            margin: 2rem 0 0.8rem;
+            border: 0;
+            height: 1px;
+            background: linear-gradient(to right, #e2edf2, transparent);
+        }
+
+        footer {
+            margin-top: 2.5rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #6f8faa;
+            border-top: 1px solid #e2edf2;
+            padding-top: 1.8rem;
+        }
+
+        @media (max-width: 780px) {
+            .container {
+                padding: 1.5rem 1rem;
+            }
+            .header {
+                flex-direction: column;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- 头部信息 -->
+    <div class="header">
+        <div class="title-section">
+            <h1>陈彬娴 <span style="font-size: 1.3rem; font-weight: 400; color: #4b6f86;">Binxian Chen</span></h1>
+            <div class="subhead">
+                清华大学生物学博士 · 结构生物学 | 人工智能抗菌肽挖掘与协同作用研究
+            </div>
+        </div>
+        <div class="contact-info">
+            <p>📧 <a href="mailto:13738576385@163.com">13738576385@163.com</a></p>
+            <p>📞 +86 137 3857 6385</p>
+            <p>📍 中国 · 浙江</p>
+        </div>
+    </div>
+
+    <!-- 个人介绍 -->
+    <div class="bio-card">
+        <div class="bio-text">
+            陈彬娴，清华大学生物学博士（2024年毕业），研究方向为<strong>结构生物学</strong>。博士期间在清华大学基础医学院从事病毒RNA及代谢酶的结构生物学研究，熟练掌握X射线晶体衍射、冷冻电镜、小角X射线散射（SAXS）等生物大分子结构解析技术，并在蛋白/RNA表达纯化方面积累丰富经验。
+        </div>
+        <div class="bio-text">
+            目前研究聚焦于<strong>基于人工智能挖掘新型抗菌肽</strong>，并探究抗菌肽与其他生物分子（如抗生素、宿主防御肽等）的协同抗菌效果。通过整合深度学习预测、高通量筛选及体外验证，致力于发现具有新机制的抗耐药菌先导分子，并解析其协同作用的生物学规律。
+        </div>
+    </div>
+
+    <!-- 教育背景 -->
+    <h2>🎓 教育背景</h2>
+    <div class="info-block">
+        <div class="degree">
+            <strong>清华大学 基础医学院</strong><span class="date">2018.09 – 2024.12</span><br>
+            生物学博士<br>
+            导师：张抒扬 教授
+        </div>
+        <div class="degree" style="margin-top: 1rem;">
+            <strong>华中农业大学 动物科学技术学院动物医学院</strong><span class="date">2014.09 – 2018.06</span><br>
+            农学学士 动物科学专业
+        </div>
+    </div>
+
+    <!-- 代表性论文 -->
+    <h2>📄 代表性论文 ( # 共同第一作者 )</h2>
+    <div class="info-block" style="padding: 0.8rem 1.5rem 1rem;">
+        <ul class="pub-list">
+            <li>
+                <span class="pub-title">Structure basis for inhibition of SARS-CoV-2 by the feline drug GC376</span><br>
+                Xiaodong Luan<sup>#</sup>, <strong>Binxian Chen</strong><sup>#</sup>, Weijuan Shang<sup>#</sup>, Wanchao Yin, Ye Jin, Leike Zhang*, H Eric Xu*, Shuyang Zhang*.<br>
+                <span class="pub-journal">Acta Pharmacologica Sinica</span> (2022) <span class="badge">一区 IF(5y)=8.2</span>
+            </li>
+            <li>
+                <span class="pub-title">3D Structural Analysis of Long Noncoding RNA by Small Angle X-ray Scattering and Computational Modeling</span><br>
+                Jie Zhang, <strong>Binxian Chen</strong>, Xianyang Fang*.<br>
+                <span class="pub-journal">Methods in Molecular Biology</span> (2023)
+            </li>
+            <li>
+                <span class="pub-title">Delivering miR-23b-3p by Small Extracellular Vesicles to Promote Cell Senescence and Aberrant Lipid Metabolism</span><br>
+                Ye Jin<sup>#</sup>, <strong>Binxian Chen</strong><sup>#</sup>, Siqin Feng<sup>#</sup>, Muyun Tang<sup>#</sup>, Gaoge Sun<sup>#</sup>, Hui Wang, Ying Zhang, Yuan Wang, Yang An, Yu Xiao, Zihan Liu, Peng Liu, Hang Yin*, Zhuang Tian*, Xiaodong Luan*, Shuyang Zhang*.<br>
+                <span class="pub-journal">BMC Biology</span> <span class="badge">一区 IF=7.4</span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 联系与协作 -->
+    <hr>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin: 0.5rem 0 0.2rem;">
+        <div>
+            <span style="font-weight: 500; font-size: 1rem;">📬 合作与交流</span>
+            <p style="margin-top: 0.2rem; font-size: 0.88rem; color: #2c5f8a;">欢迎讨论结构生物学、人工智能抗菌肽挖掘及协同抗菌策略，共同推进抗耐药菌新药研发。</p>
+        </div>
+        <div style="background: #eef3fc; border-radius: 40px; padding: 0.3rem 1.5rem;">
+            <a href="mailto:13738576385@163.com" style="color:#1a6d93; font-weight: 500;">✉️ 13738576385@163.com</a>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        © 2026 陈彬娴 (Binxian Chen) · 最后更新 2026年05月
+    </footer>
+</div>
+</body>
+</html>
